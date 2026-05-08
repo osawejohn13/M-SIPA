@@ -1126,3 +1126,478 @@ body {
     max-width: 100%;
   }
 }
+/* ========================================
+   HIGH NEED SECTORS SECTION
+======================================== */
+
+.hns-section {
+  width: 100%;
+  background: #0B0165;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* ========================================
+   WRAPPER
+======================================== */
+
+.hns-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.hns-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.hns-label {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hns-heading {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   TRACK (replaces grid)
+======================================== */
+
+.hns-track-outer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.hns-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: hnsSlide 12s linear infinite;
+}
+
+.hns-track:hover {
+  animation-play-state: paused;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.hns-card {
+  background: #FBFAFF;
+  border: 1px solid #E4D3D3;
+  border-radius: 18px;
+  padding: 40px 32px;
+  text-align: center;
+  width: 320px;
+  flex-shrink: 0;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   CARD HOVER
+======================================== */
+
+.hns-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.18);
+
+  border-color: #c9d2ff;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.hns-icon-box {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 28px;
+
+  border-radius: 50%;
+  background: #E1E9E9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hns-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+.hns-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hns-card-text {
+  color: #444444;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   SLIDE ANIMATION
+======================================== */
+
+@keyframes hnsSlide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .hns-card {
+    width: 280px;
+    padding: 32px 24px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .hns-section {
+    padding: 80px 0;
+  }
+
+  .hns-header {
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
+  .hns-heading {
+    font-size: 2rem;
+  }
+
+  .hns-track {
+    gap: 20px;
+    animation-duration: 10s;
+  }
+
+  .hns-card {
+    width: 260px;
+    padding: 28px 20px;
+  }
+
+  .hns-card:hover {
+    transform: none;
+  }
+}
+/* ========================================
+   BUILT AROUND REALITY SECTION
+======================================== */
+
+.bra-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 110px 24px;
+  overflow: hidden;
+}
+
+/* ========================================
+   WRAPPER
+======================================== */
+
+.bra-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.bra-content {
+  max-width: 480px;
+}
+
+.bra-label {
+  display: inline-block;
+  color: #800A29;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bra-heading {
+  color: #111111;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.bra-features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ========================================
+   FEATURE ITEM
+======================================== */
+
+.bra-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px 24px;
+  border-radius: 18px;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+
+  position: relative;
+}
+
+/* Hover Effect */
+
+.bra-feature-item:hover {
+  background: #faf8ff;
+
+  transform: translateX(10px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   ICON BOX
+======================================== */
+
+.bra-icon-box {
+  width: 72px;
+  height: 72px;
+
+  min-width: 72px;
+
+  border-radius: 50%;
+  background: #E1E9E9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease;
+}
+
+/* Icon */
+
+.bra-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* ========================================
+   FEATURE TITLE
+======================================== */
+
+.bra-feature-title {
+  color: #111111;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   DESKTOP AUTO ANIMATION
+======================================== */
+
+@media screen and (min-width: 992px) {
+
+  .bra-feature-item {
+    animation-name: braSlideLoop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* Staggered Delays */
+
+  .bra-feature-item:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .bra-feature-item:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+
+  .bra-feature-item:nth-child(3) {
+    animation-delay: 1.2s;
+  }
+
+  .bra-feature-item:nth-child(4) {
+    animation-delay: 1.8s;
+  }
+
+  .bra-feature-item:nth-child(5) {
+    animation-delay: 2.4s;
+  }
+
+  /* Animation */
+
+  @keyframes braSlideLoop {
+
+    0% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+
+    15% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    70% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+  }
+
+  /* Hover Enhancement */
+
+  .bra-feature-item:hover .bra-icon-box {
+    background: #d7deff;
+    transform: scale(1.08);
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .bra-wrapper {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .bra-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Disable Animation */
+
+  .bra-feature-item {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .bra-section {
+    padding: 80px 20px;
+  }
+
+  .bra-heading {
+    font-size: 2.2rem;
+  }
+
+  .bra-features {
+    gap: 18px;
+  }
+
+  .bra-feature-item {
+    padding: 18px;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .bra-icon-box {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+  }
+
+  .bra-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bra-feature-title {
+    font-size: 0.95rem;
+  }
+
+  /* Disable Hover Movement */
+
+  .bra-feature-item:hover {
+    transform: none;
+  }
+}
