@@ -1,3 +1,189 @@
+/* ========================================
+   FIXED / STATIC HEADER
+======================================== */
+
+.hero-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  backdrop-filter: blur(12px);
+
+  padding: 18px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   PREVENT CONTENT HIDING UNDER HEADER
+======================================== */
+
+/*
+Add this to the section immediately
+below your header OR your main wrapper
+*/
+
+body {
+  padding-top: 110px;
+}
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.hero-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-nav__link {
+  position: relative;
+
+  text-decoration: none;
+
+  color: #111111;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  font-family: 'Poppins', sans-serif;
+
+  transition:
+    color 0.3s ease;
+}
+
+/* Hover */
+
+.hero-nav__link:hover {
+  color: #800A29;
+}
+
+/* Active Link */
+
+.hero-nav__link--active {
+  color: #800A29;
+}
+
+/* Underline Effect */
+
+.hero-nav__link::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #800A29;
+
+  transition: width 0.3s ease;
+}
+
+.hero-nav__link:hover::after,
+.hero-nav__link--active::after {
+  width: 100%;
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.btn--primary {
+  background: #800A29;
+  color: #ffffff;
+
+  padding: 12px 24px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn--primary:hover {
+  background: #5f071f;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .hero-header {
+    padding: 16px 24px;
+  }
+
+  .hero-nav {
+    gap: 20px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .hero-header {
+    flex-wrap: wrap;
+    gap: 16px;
+
+    padding: 16px 20px;
+  }
+
+  .hero-nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+
+  .btn--primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  body {
+    padding-top: 170px;
+  }
+}
 /* =========================
    RESET
 ========================= */
