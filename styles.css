@@ -35,8 +35,17 @@ below your header OR your main wrapper
 
 body {
   padding-top: 110px;
+  margin: 0;
 }
-
+section {
+  scroll-margin-top: 110px;
+}
+img,video,iframe,.content,.section-wrapper{
+  max-width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
 /* ========================================
    LOGO
 ======================================== */
@@ -183,7 +192,11 @@ body {
   body {
     padding-top: 170px;
   }
+  section {
+ scroll-margin-top: 170px; 
 }
+}
+
 /* =========================
    RESET
 ========================= */
