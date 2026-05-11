@@ -1834,6 +1834,216 @@ body {
   }
 }
 /* ========================================
+   IMPACT MODEL SECTION
+======================================== */
+
+.impact-section {
+  width: 100%;
+  background: #E1E9E9;
+  padding: 100px 24px;
+  overflow: hidden;
+}
+
+/* ========================================
+   WRAPPER
+======================================== */
+
+.impact-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.impact-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.impact-label {
+  display: inline-block;
+
+  color: #111111;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.impact-heading {
+  color: #111111;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.impact-card {
+  background: rgba(255, 255, 255, 0.35);
+
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+
+  padding: 36px 32px;
+
+  backdrop-filter: blur(6px);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  min-height: 220px;
+}
+
+/* Hover */
+
+.impact-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #d6d6d6;
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.impact-card-title {
+  color: #800A29;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  margin-bottom: 28px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   LIST
+======================================== */
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.impact-list li {
+  position: relative;
+
+  padding-left: 18px;
+
+  color: #111111;
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Bullet */
+
+.impact-list li::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #800A29;
+
+  position: absolute;
+  left: 0;
+  top: 11px;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .impact-section {
+    padding: 80px 20px;
+  }
+
+  .impact-header {
+    margin-bottom: 50px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .impact-card {
+    padding: 30px 24px;
+    min-height: auto;
+  }
+
+  .impact-heading {
+    font-size: 2rem;
+  }
+
+  .impact-card-title {
+    margin-bottom: 22px;
+  }
+
+  .impact-list li {
+    font-size: 0.92rem;
+  }
+
+  /* Disable hover movement on mobile */
+
+  .impact-card:hover {
+    transform: none;
+  }
+}
+
+/* ========================================
    REAL WORLD APPLICATION SECTION
 ======================================== */
 
