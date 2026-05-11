@@ -58,7 +58,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  background-image: url("image/Rural\ economic\ empowerment.jpeg");
+  background-image: url("image/rural-economic-empowerment.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1448,6 +1448,7 @@ body {
 .bra-icon {
   width: 40px;
   height: 40px;
+  display: block;
   object-fit: contain;
 }
 
@@ -1598,6 +1599,662 @@ body {
   /* Disable Hover Movement */
 
   .bra-feature-item:hover {
+    transform: none;
+  }
+}
+/* ========================================
+   ECOSYSTEM MODEL SECTION
+======================================== */
+
+.ecm-section {
+  width: 100%;
+  background: #0B0165;
+  padding: 110px 24px;
+  overflow: hidden;
+}
+
+/* ========================================
+   WRAPPER
+======================================== */
+
+.ecm-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.ecm-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.ecm-label {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  letter-spacing: 1.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ecm-heading {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.ecm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.ecm-card {
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 18px;
+
+  padding: 36px 30px;
+
+  background: rgba(255,255,255,0.03);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease,
+    box-shadow 0.4s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover */
+
+.ecm-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(255,255,255,0.35);
+
+  background: rgba(255,255,255,0.06);
+
+  box-shadow:
+    0 16px 40px rgba(0,0,0,0.25);
+}
+
+/* ========================================
+   ICON BOX
+======================================== */
+
+.ecm-icon-box {
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+  background: #E1E9E9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+
+  position: relative;
+}
+
+/* Icon */
+
+.ecm-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ========================================
+   CARD TITLE
+======================================== */
+
+.ecm-card-title {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  margin-bottom: 24px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   LIST
+======================================== */
+
+.ecm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding-left: 18px;
+}
+
+.ecm-list li {
+  color: rgba(255,255,255,0.85);
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  font-family: 'Poppins', sans-serif;
+}
+/* ========================================
+   DESKTOP HOVER EFFECTS
+======================================== */
+
+@media screen and (min-width: 992px) {
+
+  .ecm-card:hover .ecm-icon-box {
+    transform: scale(1.08);
+    background: #d7deff;
+  }
+}
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .ecm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ecm-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .ecm-section {
+    padding: 80px 20px;
+  }
+
+  .ecm-header {
+    margin-bottom: 50px;
+  }
+
+  .ecm-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ecm-card {
+    padding: 30px 24px;
+  }
+
+  .ecm-heading {
+    font-size: 2rem;
+  }
+
+  .ecm-card-title {
+    font-size: 1.2rem;
+  }
+
+  .ecm-list li {
+    font-size: 0.92rem;
+  }
+
+  /* Disable Hover Movement */
+
+  .ecm-card:hover {
+    transform: none;
+  }
+}
+/* ========================================
+   REAL WORLD APPLICATION SECTION
+======================================== */
+
+.rwa-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 110px 24px;
+  overflow: hidden;
+}
+
+/* ========================================
+   WRAPPER
+======================================== */
+
+.rwa-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.rwa-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.rwa-label {
+  display: inline-block;
+
+  color: #111111;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.rwa-heading {
+  color: #111111;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.rwa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.rwa-card {
+  background: #FBFAFF;
+
+  border: 1px solid #E4D3D3;
+  border-radius: 18px;
+
+  padding: 36px 30px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover */
+
+.rwa-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #d3d9ff;
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* ========================================
+   CARD TITLE
+======================================== */
+
+.rwa-card-title {
+  color: #111111;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  margin-bottom: 22px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   CARD TEXT
+======================================== */
+
+.rwa-card-text {
+  color: #444444;
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   DESKTOP EFFECTS
+======================================== */
+
+@media screen and (min-width: 992px) {
+
+  .rwa-card:hover .rwa-card-title {
+    color: #800A29;
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .rwa-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .rwa-section {
+    padding: 80px 20px;
+  }
+
+  .rwa-header {
+    margin-bottom: 50px;
+  }
+
+  .rwa-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .rwa-card {
+    padding: 30px 24px;
+  }
+
+  .rwa-heading {
+    font-size: 2rem;
+  }
+
+  .rwa-card-title {
+    font-size: 1.15rem;
+  }
+
+  .rwa-card-text {
+    font-size: 0.92rem;
+  }
+
+  /* Disable hover movement on mobile */
+
+  .rwa-card:hover {
+    transform: none;
+  }
+}
+/* ========================================
+   CTA SECTION
+======================================== */
+
+.cta-section {
+  width: 100%;
+  background: #800A29;
+  padding: 100px 24px;
+  overflow: hidden;
+}
+
+/* ========================================
+   WRAPPER
+======================================== */
+
+.cta-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.cta-content {
+  max-width: 850px;
+  margin: 0 auto 60px;
+}
+
+.cta-heading {
+  color: #ffffff;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.3;
+
+  margin-bottom: 28px;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-text {
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 1rem;
+  line-height: 1.9;
+
+  font-weight: 400;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================
+   BUTTON GROUP
+======================================== */
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  margin-bottom: 45px;
+
+  flex-wrap: wrap;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.cta-btn,
+.cta-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Primary Button */
+
+.cta-btn-primary {
+  background: #0B0165;
+  color: #ffffff;
+
+  padding: 16px 42px;
+
+  font-size: 1.15rem;
+  font-weight: 500;
+
+  min-width: 260px;
+}
+
+.cta-btn-primary:hover {
+  transform: translateY(-4px);
+
+  background: #1401a5;
+
+  box-shadow:
+    0 10px 25px rgba(11, 1, 101, 0.35);
+}
+
+/* Outline Button */
+
+.cta-btn-outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+
+  padding: 16px 42px;
+
+  font-size: 1.15rem;
+  font-weight: 500;
+
+  min-width: 260px;
+}
+
+.cta-btn-outline:hover {
+  background: #ffffff;
+  color: #800A29;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 25px rgba(255,255,255,0.18);
+}
+
+/* ========================================
+   DOWNLOAD BUTTON
+======================================== */
+
+.cta-download-btn {
+  background: #E1E9E9;
+  color: #111111;
+
+  padding: 18px 40px;
+
+  font-size: 1.15rem;
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+}
+
+.cta-download-btn:hover {
+  transform: translateY(-4px);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 16px 35px rgba(0,0,0,0.2);
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 991px) {
+
+  .cta-section {
+    padding: 90px 24px;
+  }
+
+  .cta-heading {
+    font-size: 2.5rem;
+  }
+
+  .cta-actions {
+    gap: 20px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .cta-section {
+    padding: 80px 20px;
+  }
+
+  .cta-content {
+    margin-bottom: 45px;
+  }
+
+  .cta-heading {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    gap: 18px;
+
+    margin-bottom: 35px;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-outline,
+  .cta-download-btn {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 1rem;
+
+    padding: 16px 24px;
+  }
+
+  /* Disable hover movement on mobile */
+
+  .cta-btn-primary:hover,
+  .cta-btn-outline:hover,
+  .cta-download-btn:hover {
     transform: none;
   }
 }
