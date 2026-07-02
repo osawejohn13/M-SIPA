@@ -7,366 +7,437 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="how-it-works.css" />
 </head>
 <body>
   <header class="hero-header">
-    
-    <span class="logo-shift">
-      <a href="#" class="logo" aria-label="MSIPA Mobile Money Ltd">
-    <img
-      src="image/m-sipa-logo.jpg"
-      alt="MSIPA Mobile Money Ltd Logo"
-      class="logo__image"
-    />
-  </a>
-</span>
 
-    <nav class="hero-nav" aria-label="Main navigation">
-      <a href="#problem" class="hero-nav__link">Problem</a>
-      <a href="#solution" class="hero-nav__link">Solution</a>
-      <a href="#how-it-works" class="hero-nav__link hero-nav__link--active">
-        How It Works
-      </a>
-      <a href="#impact" class="hero-nav__link">Impact</a>
-    </nav>
-
-    <a href="#partner" class="btn btn--primary btn--sm">
-      Partner With Us
+  <div class="logo-shift">
+    <a href="#" class="logo" aria-label="M-SIPA">
+      <img
+        src="image/m-sipa-logo.jpg"
+        alt="M-SIPA Logo"
+        class="logo__image"
+      />
     </a>
-  </header>
-  <section class="hero-section">
+  </div>
+
+  <nav class="hero-nav" aria-label="Main navigation">
+    <a href="#home" class="hero-nav__link hero-nav__link--active">Home</a>
+    <a href="#platform" class="hero-nav__link">Platform</a>
+    <a href="#solutions" class="hero-nav__link">Solutions</a>
+    <a href="#ecosystem" class="hero-nav__link">Ecosystem</a>
+    <a href="#impact" class="hero-nav__link">Impact</a>
+    <a href="#partners" class="hero-nav__link">Partners</a>
+    <a href="#resources" class="hero-nav__link">Resources</a>
+  </nav>
+
+  <a href="#pilot" class="btn btn--primary btn--sm nav-cta">
+    Request a Pilot
+  </a>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+    ☰
+  </button>
+
+</header>
+<section id="platform" class="hero-section">
   <div class="hero-overlay"></div>
+
+  <!-- Animated Flow -->
+  <div class="signal-flow">
+    <span>Communities</span>
+    <span>Behaviour</span>
+    <span>Identity</span>
+    <span>Finance</span>
+    <span>Growth</span>
+  </div>
 
   <div class="hero-content">
     <div class="hero-text">
+
+      <p class="hero-label">M-SIPA Infrastructure Platform</p>
+
       <h1 class="hero-title">
-        Bringing Structure to
+        The Infrastructure Behind
         <span>Invisible Economies</span>
       </h1>
 
       <p class="hero-description">
-        An offline, agent-driven system that enables rural and underserved
-        communities to build financial identity, access credit, and participate
-        in structured economic systems — without needing internet, smartphones,
-        or literacy.
+        Every economy leaves signals. M-SIPA transforms those signals into
+        trusted financial identity.
+      </p>
+
+      <p class="hero-subtext">
+        M-SIPA is a community financial infrastructure platform that captures
+        everyday economic behaviour, creates verifiable financial identities,
+        and connects underserved communities to formal financial services.
       </p>
     </div>
 
     <div class="hero-actions">
-      <a href="#partner" class="btn btn--primary">
-        Partner With Us
+      <a href="#pilot" class="btn btn--primary">
+        Request a Pilot
       </a>
 
-      <a href="#explore" class="btn btn--outline">
-        Explore the Model
+      <a href="#platform" class="btn btn--outline">
+        Explore the Platform
       </a>
     </div>
   </div>
 </section>
-    <section id="problem" class="problem-section">
+<section id="home" class="problem-section">
   <div class="container">
-    
-    <div class="problem-content">
-      <span class="section-label"><h1>The Problem</h1></span>
+
+    <!-- LEFT CONTENT -->
+    <div class="problem-content active">
+      <span class="section-label">Every Economy Leaves Signals</span>
 
       <h2 class="problem-title">
-        Economic Activity Exists — But It's
-        <span>Not Recognized</span>
+        Economic Activity Exists —
+        <span>But It's Not Recognized</span>
       </h2>
 
       <p class="problem-description">
-        Across rural communities, displaced populations, and informal sectors,
-        millions of people are actively working, trading, and surviving.
+        People without bank accounts still work, trade, save, borrow, repay,
+        produce, contribute, and build trust every day.
       </p>
 
       <div class="problem-highlight">
-        But their efforts remain invisible.
+        The problem isn't that these activities don't exist — the problem is that
+        traditional financial systems cannot recognize them.
       </div>
 
       <p class="problem-text">
-        Microfinance institutions struggle to lend. NGOs struggle to scale
-        impact. Digital solutions fail to reach them.
-      </p>
-
-      <p class="problem-text emphasis">
-        Not because people are inactive —
-        <strong>but because the system cannot see them.</strong>
+        Millions remain financially invisible because no infrastructure captures,
+        verifies, and transforms their economic behaviour into trusted identity.
       </p>
     </div>
 
+    <!-- RIGHT SIGNAL CARDS -->
     <div class="problem-cards">
 
       <div class="problem-card">
-        <div class="card-icon">
-          <img src="image/financial-records-icon.jpeg" alt="Financial records icon">
-        </div>
-
         <div class="card-content">
-          <h3>No financial records</h3>
+          <h3>Work</h3>
         </div>
       </div>
 
       <div class="problem-card">
-        <div class="card-icon">
-          <img src="image/identity-icon.jpeg" alt="Identity icon">
-        </div>
-
         <div class="card-content">
-          <h3>No verifiable identity within formal systems</h3>
+          <h3>Trade</h3>
         </div>
       </div>
 
       <div class="problem-card">
-        <div class="card-icon">
-          <img src="image/credit-icon.jpeg" alt="Credit icon">
-        </div>
-
         <div class="card-content">
-          <h3>No access to structured credit</h3>
+          <h3>Save & Borrow</h3>
         </div>
       </div>
 
       <div class="problem-card">
-        <div class="card-icon">
-          <img src="image/growth-icon.jpeg" alt="Growth icon">
-        </div>
-
         <div class="card-content">
-          <h3>No reliable pathway to grow livelihoods</h3>
+          <h3>Build Trust</h3>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="card-content">
+          <h3>Repay</h3>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="card-content">
+          <h3>Contribute</h3>
         </div>
       </div>
 
     </div>
-
   </div>
 </section>
-<section class="gap-section">
+<section id="solutions" class="gap-section">
   <div class="gap-container">
 
     <div class="gap-header">
-      <span class="gap-label">The Gap</span>
+      <span class="gap-label">The Missing Infrastructure</span>
 
       <h2 class="gap-title">
-        What’s Missing Isn’t Money — It’s Structure
+        Formal Financial Systems Require What Millions Do Not Have
       </h2>
 
       <p class="gap-description">
-        The real barrier is not access to funds. It is the absence of a system
-        that can meet people where they are.
+        Traditional financial systems are designed around requirements that many
+        underserved communities cannot meet.
       </p>
     </div>
 
     <div class="gap-cards">
 
       <article class="gap-card">
-        <div class="gap-card__icon">
-          <img src="image/offline-access-icon.jpeg" alt="Offline access icon">
-        </div>
-
         <p class="gap-card__text">
-          Capture economic activity without internet
+          Formal Identity
         </p>
       </article>
 
       <article class="gap-card">
-        <div class="gap-card__icon">
-          <img src="image/trust-icon.jpeg" alt="Trust icon">
-        </div>
-
         <p class="gap-card__text">
-          Build trust without formal documentation
+          Credit History
         </p>
       </article>
 
       <article class="gap-card">
-        <div class="gap-card__icon">
-          <img src="image/accessibility-icon.jpeg" alt="Accessibility icon">
-        </div>
-
         <p class="gap-card__text">
-          Enable participation without literacy barriers
+          Internet Connectivity
         </p>
       </article>
 
       <article class="gap-card">
-        <div class="gap-card__icon">
-          <img src="image/identity-icon2.jpeg" alt="Identity icon">
-        </div>
-
         <p class="gap-card__text">
-          Translate behavior into recognizable financial identity
+          Smartphones & Digital Literacy
         </p>
       </article>
 
     </div>
 
     <p class="gap-footer">
-      Until this gap is solved, financial inclusion remains incomplete.
+      Millions have none of these — yet they already participate in vibrant local
+      economies. M-SIPA converts community behaviour into structured financial identity.
     </p>
 
   </div>
 </section>
-<section id="solution" class="solution">
-  <div class="solution__container">
+<section id="platform" class="identity-section">
+  <div class="identity-container">
 
-    <div class="solution__header">
-      <span class="solution__label">The Solution</span>
-      <h2 class="solution__title">A System Built for Real-World Conditions</h2>
-      <p class="solution__description">
-        M-SIPA is an offline-enabled, agent-driven system that converts everyday economic activity into
-        structured, verifiable financial identity.
+    <div class="identity-left">
+      <span class="identity-label">What M-SIPA Creates</span>
+
+      <h2 class="identity-title">
+        M-SIPA Creates
+        <span>Behavioural Financial Identity</span>
+      </h2>
+
+      <p class="identity-description">
+        Instead of relying only on formal records, M-SIPA converts everyday
+        economic behaviour into trusted financial identity.
       </p>
+
+      <div class="identity-badge">
+        Behaviour becomes trust. Trust becomes opportunity.
+      </div>
     </div>
 
-    <div class="solution__cards">
-
-      <article class="solution__card">
-        <h3 class="solution__card-title">No smartphones required</h3>
-        <p class="solution__card-text">Works through trained local agents and simple tools.</p>
-      </article>
-
-      <article class="solution__card">
-        <h3 class="solution__card-title">No constant connectivity</h3>
-        <p class="solution__card-text">Captures and syncs data in offline environments.</p>
-      </article>
-
-      <article class="solution__card">
-        <h3 class="solution__card-title">No literacy assumed</h3>
-        <p class="solution__card-text">Designed around voice, behavior, and community trust.</p>
-      </article>
-
+    <div class="identity-grid">
+      <div class="identity-card">Economic Identity</div>
+      <div class="identity-card">Trust Scores</div>
+      <div class="identity-card">Participation History</div>
+      <div class="identity-card">Savings Behaviour</div>
+      <div class="identity-card">Trading Records</div>
+      <div class="identity-card">Community Reputation</div>
+      <div class="identity-card">Repayment Behaviour</div>
+      <div class="identity-card">Financial Readiness</div>
     </div>
+
   </div>
 </section>
-<section class="hiw">
-  <div class="hiw__container">
+<section id="platform-layers" class="platform">
+  <div class="platform-container">
 
-    <!-- Section Header -->
-    <div class="hiw__header">
-      <span class="hiw__label">HOW IT WORKS</span>
-      <h2 class="hiw__title">From Community to Credit in Five Steps</h2>
+    <div class="platform-header">
+      <span class="platform-label">The M-SIPA Platform</span>
+      <h2 class="platform-title">Five Layers of Financial Infrastructure</h2>
     </div>
 
-    <!-- Timeline -->
-    <ol class="hiw__timeline">
+    <!-- Layer 1 -->
+    <article class="platform-card">
+      <div class="platform-image">
+        <img src="image/community-entry-visual.jpeg" alt="">
+      </div>
 
-      <!-- Step 1 -->
-      <li class="hiw__step hiw__step--left">
-        <div class="hiw__step-content">
-          <div class="hiw__step-icon">
-            <div class="hiw__step-icon-bg"></div>
-            <img src="image/community-entry-illustration.jpeg" alt="Community Entry illustration" />
-          </div>
-          <div class="hiw__step-body">
-            <p class="hiw__step-label"><span class="hiw__step-number">Step 1</span> — NGO Layer</p>
-            <h3 class="hiw__step-title">Community Entry</h3>
-            <p class="hiw__step-text">Local partners engage communities, organize groups, and build trust.</p>
-          </div>
-        </div>
-        <div class="hiw__step-media">
-          <img src="image/community-entry-visual.jpeg" alt="Community entry visual" />
-        </div>
-      </li>
+      <div class="platform-content">
+        <span class="layer-badge">Layer 1</span>
+        <h3>Community Network</h3>
+        <p>
+          Communities, NGOs, cooperatives, farmer groups, women’s associations,
+          faith-based organisations and humanitarian partners.
+        </p>
+      </div>
+    </article>
 
-      <!-- Step 2 -->
-      <li class="hiw__step hiw__step--right">
-        <div class="hiw__step-media">
-          <img src="image/agent-interaction-visual.jpeg" alt="Agent interaction visual" />
-        </div>
-        <div class="hiw__step-content">
-          <div class="hiw__step-icon">
-            <div class="hiw__step-icon-bg"></div>
-            <img src="image/agent-interaction-illustration.jpeg" alt="Agent Interaction illustration" />
-          </div>
-          <div class="hiw__step-body">
-            <p class="hiw__step-label"><span class="hiw__step-number">Step 2</span></p>
-            <h3 class="hiw__step-title">Agent Interaction</h3>
-            <p class="hiw__step-text">Trained local agents act as the interface between users and the system.</p>
-          </div>
-        </div>
-      </li>
+    <!-- Layer 2 -->
+    <article class="platform-card reverse">
+      <div class="platform-image">
+        <img src="image/agent-interaction-visual.jpeg" alt="">
+      </div>
 
-      <!-- Step 3 -->
-      <li class="hiw__step hiw__step--left">
-        <div class="hiw__step-content">
-          <div class="hiw__step-icon">
-            <div class="hiw__step-icon-bg"></div>
-            <img src="image/offline-activity-capture-illustration.jpeg" alt="Offline Activity Capture illustration" />
-          </div>
-          <div class="hiw__step-body">
-            <p class="hiw__step-label"><span class="hiw__step-number">Step 3</span></p>
-            <h3 class="hiw__step-title">Offline Activity Capture</h3>
-            <p class="hiw__step-text">Transactions, contributions, and group activities are recorded without internet.</p>
-          </div>
-        </div>
-        <div class="hiw__step-media">
-          <img src="image/offline-capture-visual.jpeg" alt="Offline capture visual" />
-        </div>
-      </li>
+      <div class="platform-content">
+        <span class="layer-badge">Layer 2</span>
+        <h3>Field Intelligence Layer</h3>
+        <p>
+          Local Agents use Mobile Devices for Offline Data Capture through Digital Forms, with support for Voice, USSD, Biometric Support, and GPS.
+        </p>
+      </div>
+    </article>
 
-      <!-- Step 4 -->
-      <li class="hiw__step hiw__step--right">
-        <div class="hiw__step-media">
-          <img src="image/behavioral-identity-creation-visual.jpeg" alt="Behavioral Identity Creation visual" />
-        </div>
-        <div class="hiw__step-content">
-          <div class="hiw__step-icon">
-            <div class="hiw__step-icon-bg"></div>
-            <img src="image/behavioral-identity-illustration.jpeg" alt="Behavioral Identity illustration" />
-          </div>
-          <div class="hiw__step-body">
-            <p class="hiw__step-label"><span class="hiw__step-number">Step 4</span></p>
-            <h3 class="hiw__step-title">Behavioral Identity Creation</h3>
-            <p class="hiw__step-text">Patterns such as consistency, participation, and trade activity form a financial profile.</p>
-          </div>
-        </div>
-      </li>
+    <!-- Layer 3 -->
+    <article class="platform-card">
+      <div class="platform-image">
+        <img src="image/behavioral-identity-creation-visual.jpeg" alt="">
+      </div>
 
-      <!-- Step 5 -->
-      <li class="hiw__step hiw__step--left">
-        <div class="hiw__step-content">
-          <div class="hiw__step-icon">
-            <div class="hiw__step-icon-bg"></div>
-            <img src="image/financial-access-illustration.jpeg" alt="Financial Access illustration" />
-          </div>
-          <div class="hiw__step-body">
-            <p class="hiw__step-label"><span class="hiw__step-number">Step 5</span> — Microfinance Layer</p>
-            <h3 class="hiw__step-title">Financial Access</h3>
-            <p class="hiw__step-text">Microfinance institutions use this data to provide structured credit and services.</p>
-          </div>
-        </div>
-        <div class="hiw__step-media">
-          <img src="image/financial-access-visual.jpeg" alt="Financial access visual" />
-        </div>
-      </li>
+      <div class="platform-content">
+        <span class="layer-badge">Layer 3</span>
+        <h3>Behavioural Identity Engine</h3>
+        <p>
+          This becomes your intellectual property—capturing Savings, Attendance, Trading Activity, Repayment, Participation, Reliability, Community Trust, and Economic Behaviour. Instead of static identities, M-SIPA builds living economic identities.
+        </p>
+      </div>
+    </article>
 
-    </ol>
+    <!-- Layer 4 -->
+    <article class="platform-card reverse">
+      <div class="platform-image">
+        <img src="image/offline-capture-visual.jpeg" alt="">
+      </div>
+
+      <div class="platform-content">
+        <span class="layer-badge">Layer 4</span>
+        <h3>Financial Enablement Layer</h3>
+        <p>
+          M-SIPA brings together Banks, MFIs, Fintechs, Wallets, Insurance providers, Government Transfers, Agricultural Finance, Merchant Payments, Savings, and Credit into a unified ecosystem.
+        </p>
+      </div>
+    </article>
+
+    <!-- Layer 5 -->
+    <article class="platform-card">
+      <div class="platform-image">
+        <img src="image/financial-access-visual.jpeg" alt="">
+      </div>
+
+      <div class="platform-content">
+        <span class="layer-badge">Layer 5</span>
+        <h3>Intelligence & Analytics Layer</h3>
+        <p>
+          This is your competitive moat.
+AI-powered: Risk Scoring, Portfolio Analytics, Community Health, Agricultural Productivity, Livelihood Indicators, Programme Monitoring, Economic Insights, Development Impact, and Policy Intelligence.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+<section class="engine-section">
+  <div class="engine-header">
+    <span class="engine-eyebrow">This Is New</span>
+    <h2 class="engine-title">The Intelligence Engine</h2>
+    <p class="engine-subtext">
+      A closed loop where every community interaction feeds back into economic growth.
+    </p>
+  </div>
+
+  <!-- Desktop / Tablet: Circular Flow -->
+  <div class="engine-circle-wrap">
+    <div class="engine-ring"></div>
+
+    <!-- Nodes -->
+    <div class="engine-node node-1"><span class="node-num">1</span><span class="node-label">Community</span></div>
+    <div class="engine-node node-2"><span class="node-num">2</span><span class="node-label">Agent</span></div>
+    <div class="engine-node node-3"><span class="node-num">3</span><span class="node-label">Offline Capture</span></div>
+    <div class="engine-node node-4"><span class="node-num">4</span><span class="node-label">Behaviour Engine</span></div>
+    <div class="engine-node node-5"><span class="node-num">5</span><span class="node-label">Identity Engine</span></div>
+    <div class="engine-node node-6"><span class="node-num">6</span><span class="node-label">AI Intelligence</span></div>
+    <div class="engine-node node-7"><span class="node-num">7</span><span class="node-label">Risk Assessment</span></div>
+    <div class="engine-node node-8"><span class="node-num">8</span><span class="node-label">Financial Services</span></div>
+    <div class="engine-node node-9"><span class="node-num">9</span><span class="node-label">Economic Growth</span></div>
+
+    <!-- Reusable Arrow -->
+    <svg class="engine-arrow arrow-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <!-- Duplicate arrows with different classes (arrow-2 to arrow-9) -->
+    <svg class="engine-arrow arrow-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <!-- ... repeat for arrow-3 to arrow-9 ... -->
+
+    <!-- Center Hub -->
+    <div class="engine-hub">
+      <div class="engine-hub-icon">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+          <path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4.2 4.2M32.8 32.8 37 37M37 11l-4.2 4.2M15.2 32.8 11 37" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="engine-hub-text">M-SIPA<br>Engine</span>
+    </div>
+  </div>
+
+  <!-- Mobile: Linear Flow -->
+  <div class="engine-linear">
+    <div class="engine-linear-step"><span class="node-num">1</span><span class="node-label">Community</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">2</span><span class="node-label">Agent</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">3</span><span class="node-label">Offline Capture</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">4</span><span class="node-label">Behaviour Engine</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">5</span><span class="node-label">Identity Engine</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">6</span><span class="node-label">AI Intelligence</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">7</span><span class="node-label">Risk Assessment</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">8</span><span class="node-label">Financial Services</span></div>
+    <span class="linear-arrow">↓</span>
+
+    <div class="engine-linear-step"><span class="node-num">9</span><span class="node-label">Economic Growth</span></div>
+    <span class="linear-arrow linear-arrow--loop">↺ back to Community</span>
+  </div>
+
+  <div class="engine-note">
+    <p>The more communities use M-SIPA, the more accurate its behavioural models become.</p>
   </div>
 </section>
 <section class="hns-section">
-
+ 
   <div class="hns-wrapper">
-
+ 
     <!-- Section Header -->
     <div class="hns-header">
       <span class="hns-label">
         WHERE IT WORKS
       </span>
-
+ 
       <h2 class="hns-heading">
         Designed for High-Need Sectors
       </h2>
+ 
+      <div class="hns-rule">
+        <span class="hns-rule-seg hns-rule-seg--blue"></span>
+        <span class="hns-rule-seg hns-rule-seg--white"></span>
+        <span class="hns-rule-seg hns-rule-seg--red"></span>
+      </div>
     </div>
-
+ 
   </div>
-
+ 
   <!-- Sliding Track -->
   <div class="hns-track-outer">
     <div class="hns-track">
-
+ 
       <!-- Original Set -->
-
+ 
       <!-- Card 1 -->
       <article class="hns-card">
         <div class="hns-icon-box">
@@ -383,7 +454,7 @@
           Supporting smallholder farmers with structured access to finance.
         </p>
       </article>
-
+ 
       <!-- Card 2 -->
       <article class="hns-card">
         <div class="hns-icon-box">
@@ -400,7 +471,7 @@
           Enabling participation in formal economic systems.
         </p>
       </article>
-
+ 
       <!-- Card 3 -->
       <article class="hns-card">
         <div class="hns-icon-box">
@@ -417,11 +488,11 @@
           Creating identity where documentation does not exist.
         </p>
       </article>
-
+ 
       <!-- Duplicate Set (for seamless loop) -->
-
+ 
       <!-- Card 1 -->
-      <article class="hns-card">
+      <article class="hns-card" aria-hidden="true">
         <div class="hns-icon-box">
           <img
             src="image/agriculture-icon.jpeg"
@@ -436,9 +507,9 @@
           Supporting smallholder farmers with structured access to finance.
         </p>
       </article>
-
+ 
       <!-- Card 2 -->
-      <article class="hns-card">
+      <article class="hns-card" aria-hidden="true">
         <div class="hns-icon-box">
           <img
             src="image/community-entry-illustration.jpeg"
@@ -453,9 +524,9 @@
           Enabling participation in formal economic systems.
         </p>
       </article>
-
+ 
       <!-- Card 3 -->
-      <article class="hns-card">
+      <article class="hns-card" aria-hidden="true">
         <div class="hns-icon-box">
           <img
             src="image/workers-icon.jpeg"
@@ -470,120 +541,165 @@
           Creating identity where documentation does not exist.
         </p>
       </article>
-
+ 
     </div>
   </div>
+ 
+  <div class="hns-note">
+    <span class="hns-arrow hns-arrow--left">&#8592;</span>
+    <span>Continuously sliding</span>
+    <span class="hns-arrow hns-arrow--right">&#8594;</span>
+  </div>
+ 
+</section>
+<section class="msipa-diff-section">
+  <div class="msipa-diff-header">
+    <span class="msipa-diff-eyebrow">The Comparison</span>
+    <h2 class="msipa-diff-title">Why M-SIPA Is Different</h2>
+  </div>
 
+  <div class="msipa-diff-table-wrap">
+    <table class="msipa-diff-table">
+      <thead>
+        <tr>
+          <th class="msipa-diff-th msipa-diff-th--old">Traditional Financial Systems</th>
+          <th class="msipa-diff-th msipa-diff-th--new">M-SIPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="msipa-diff-td msipa-diff-td--old" data-label="Traditional">
+            <span class="msipa-diff-icon msipa-diff-icon--old">✕</span>
+            Formal ID required
+          </td>
+          <td class="msipa-diff-td msipa-diff-td--new" data-label="M-SIPA">
+            <span class="msipa-diff-icon msipa-diff-icon--new">✓</span>
+            Behaviour creates identity
+          </td>
+        </tr>
+        <tr>
+          <td class="msipa-diff-td msipa-diff-td--old" data-label="Traditional">
+            <span class="msipa-diff-icon msipa-diff-icon--old">✕</span>
+            Internet required
+          </td>
+          <td class="msipa-diff-td msipa-diff-td--new" data-label="M-SIPA">
+            <span class="msipa-diff-icon msipa-diff-icon--new">✓</span>
+            Offline-first
+          </td>
+        </tr>
+        <tr>
+          <td class="msipa-diff-td msipa-diff-td--old" data-label="Traditional">
+            <span class="msipa-diff-icon msipa-diff-icon--old">✕</span>
+            Smartphone required
+          </td>
+          <td class="msipa-diff-td msipa-diff-td--new" data-label="M-SIPA">
+            <span class="msipa-diff-icon msipa-diff-icon--new">✓</span>
+            Agent-enabled
+          </td>
+        </tr>
+        <tr>
+          <td class="msipa-diff-td msipa-diff-td--old" data-label="Traditional">
+            <span class="msipa-diff-icon msipa-diff-icon--old">✕</span>
+            Credit history required
+          </td>
+          <td class="msipa-diff-td msipa-diff-td--new" data-label="M-SIPA">
+            <span class="msipa-diff-icon msipa-diff-icon--new">✓</span>
+            Behavioural history accepted
+          </td>
+        </tr>
+        <tr>
+          <td class="msipa-diff-td msipa-diff-td--old" data-label="Traditional">
+            <span class="msipa-diff-icon msipa-diff-icon--old">✕</span>
+            One institution
+          </td>
+          <td class="msipa-diff-td msipa-diff-td--new" data-label="M-SIPA">
+            <span class="msipa-diff-icon msipa-diff-icon--new">✓</span>
+            Entire ecosystem
+          </td>
+        </tr>
+        <tr>
+          <td class="msipa-diff-td msipa-diff-td--old" data-label="Traditional">
+            <span class="msipa-diff-icon msipa-diff-icon--old">✕</span>
+            Static customer records
+          </td>
+          <td class="msipa-diff-td msipa-diff-td--new" data-label="M-SIPA">
+            <span class="msipa-diff-icon msipa-diff-icon--new">✓</span>
+            Living economic identity
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 <section id="how-it-works" class="bra-section">
-
   <div class="bra-wrapper">
 
     <!-- Left Content -->
     <div class="bra-content">
-
       <span class="bra-label">
         Why This Approach Works
       </span>
 
       <h2 class="bra-heading">
-        Built Around Reality, Not Assumptions
+        Built Around <span>Reality</span>, Not Assumptions
       </h2>
 
+      <p class="bra-description">
+        M-SIPA works because it adapts to real community conditions—offline access,
+        agent support, and trust-driven systems.
+      </p>
     </div>
 
     <!-- Right Features -->
     <div class="bra-features">
 
-      <!-- Item 1 -->
       <article class="bra-feature-item">
-
         <div class="bra-icon-box">
-          <img 
-            src="image/offline-activity-capture-illustration.jpeg"
-            alt="Connectivity Icon"
-            class="bra-icon"
-          >
+          <img src="image/offline-activity-capture-illustration.jpeg" alt="" class="bra-icon">
         </div>
-
         <h3 class="bra-feature-title">
           Works offline in low-connectivity environments
         </h3>
-
       </article>
 
-      <!-- Item 2 -->
       <article class="bra-feature-item">
-
         <div class="bra-icon-box">
-          <img 
-            src="image/agent-interaction-illustration.jpeg"
-            alt="Agents Icon"
-            class="bra-icon"
-          >
+          <img src="image/agent-interaction-illustration.jpeg" alt="" class="bra-icon">
         </div>
-
         <h3 class="bra-feature-title">
           Uses agents, not apps
         </h3>
-
       </article>
 
-      <!-- Item 3 -->
       <article class="bra-feature-item">
-
         <div class="bra-icon-box">
-          <img 
-            src="image/accessibility-icon.jpeg"
-            alt="Literacy Icon"
-            class="bra-icon"
-          >
+          <img src="image/accessibility-icon.jpeg" alt="" class="bra-icon">
         </div>
-
         <h3 class="bra-feature-title">
           Adapts to low-literacy users
         </h3>
-
       </article>
 
-      <!-- Item 4 -->
       <article class="bra-feature-item">
-
         <div class="bra-icon-box">
-          <img 
-            src="image/community-icon.jpeg"
-            alt="Community Icon"
-            class="bra-icon"
-          >
+          <img src="image/community-icon.jpeg" alt="" class="bra-icon">
         </div>
-
         <h3 class="bra-feature-title">
           Leverages existing community trust systems
         </h3>
-
       </article>
 
-      <!-- Item 5 -->
       <article class="bra-feature-item">
-
         <div class="bra-icon-box">
-          <img 
-            src="image/identity-icon2.jpeg"
-            alt="Trust Icon"
-            class="bra-icon"
-          >
+          <img src="image/identity-icon2.jpeg" alt="" class="bra-icon">
         </div>
-
         <h3 class="bra-feature-title">
           Designed for real-world accessibility
         </h3>
-
       </article>
 
     </div>
-
   </div>
-
 </section>
 <section class="ecm-section">
 
@@ -689,65 +805,40 @@
 
     <!-- Header -->
     <div class="impact-header">
-
-      <span class="impact-label">
-        IMPACT
-      </span>
-
-      <h2 class="impact-heading">
-        What this Enables
-      </h2>
-
+      <span class="impact-label">IMPACT</span>
+      <h2 class="impact-heading">What this Enables</h2>
     </div>
 
     <!-- Timeline Cards -->
     <div class="impact-grid">
 
-      <article class="impact-card">
-
-        <h3 class="impact-card-title">
-          Short-Term
-        </h3>
-
+      <article class="impact-card impact-card-1">
+        <h3 class="impact-card-title">Short-Term</h3>
         <ul class="impact-list">
           <li>Increased participation in structured systems</li>
           <li>Improved access to credit</li>
         </ul>
-
       </article>
 
-      <!-- Medium Term -->
-      <article class="impact-card">
-
-        <h3 class="impact-card-title">
-          Medium-Term
-        </h3>
-
+      <article class="impact-card impact-card-2">
+        <h3 class="impact-card-title">Medium-Term</h3>
         <ul class="impact-list">
           <li>Alternative credit scoring models</li>
           <li>Stronger local economies</li>
         </ul>
-
       </article>
 
-      <!-- Long Term -->
-      <article class="impact-card">
-
-        <h3 class="impact-card-title">
-          Long-Term
-        </h3>
-
+      <article class="impact-card impact-card-3">
+        <h3 class="impact-card-title">Long-Term</h3>
         <ul class="impact-list">
           <li>Integration of informal economies into formal systems</li>
           <li>Scalable financial inclusion</li>
         </ul>
-
       </article>
 
     </div>
 
   </div>
-
 </section>
 <section class="rwa-section">
 
@@ -860,5 +951,29 @@
   </footer>
 
 </section>
+<script src="script.js"></script>
+<script>
+const slides = document.querySelectorAll(".problem-content");
+let currentSlide = 0;
+const slideDelay = 8000; // 5 seconds delay
+
+function showSlide(index) {
+  slides.forEach(slide => {
+    slide.classList.remove("active");
+  });
+
+  slides[index].classList.add("active");
+}
+
+setInterval(() => {
+  currentSlide++;
+
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+
+  showSlide(currentSlide);
+}, slideDelay);
+</script>
 </body>
 </html>
