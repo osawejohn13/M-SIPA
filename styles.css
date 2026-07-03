@@ -196,6 +196,7 @@ section {
   padding: 120px 24px;
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 
 .hero-text {
@@ -244,11 +245,28 @@ section {
 }
 
 .hero-actions {
+  bottom: 60px;
+  justify-content: center;
   display: flex;
-  gap:16px;
+  gap:20px;
   flex-wrap: wrap;
   margin-top: 24px;
   align-items: center;
+}
+.hero-actions, .hero-footer{
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.hero-footer {
+  bottom: 0;
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: Arial, sans-serif;
 }
 
 .btn--primary {
@@ -907,6 +925,11 @@ section {
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.06);
   z-index: 5;
 }
+.engine-hub img{
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
 
 .engine-hub-icon svg {
   width: 30%;
@@ -1063,19 +1086,19 @@ section {
     linear-gradient(135deg, #0B0165 0%, #1a127f 55%, #800A29 100%);
   overflow: hidden;
 }
- 
+
 .hns-wrapper {
   max-width: 1250px;
   margin: auto;
   padding: 0 20px;
 }
- 
+
 /* ---------- Header ---------- */
 .hns-header {
   text-align: center;
   margin-bottom: 70px;
 }
- 
+
 .hns-label {
   position: relative;
   display: inline-block;
@@ -1086,7 +1109,7 @@ section {
   margin-bottom: 18px;
   padding: 0 34px;
 }
- 
+
 .hns-label::before,
 .hns-label::after {
   content: "";
@@ -1096,24 +1119,24 @@ section {
   height: 1px;
   background: #e8203f;
 }
- 
+
 .hns-label::before { left: 0; }
 .hns-label::after { right: 0; }
- 
+
 .hns-heading {
   color: white;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 24px;
 }
- 
+
 .hns-subtext {
   color: rgba(255, 255, 255, 0.85);
   max-width: 700px;
   margin: auto;
   line-height: 1.8;
 }
- 
+
 /* Tricolor rule under heading */
 .hns-rule {
   display: flex;
@@ -1124,15 +1147,15 @@ section {
   border-radius: 2px;
   overflow: hidden;
 }
- 
+
 .hns-rule-seg {
   flex: 1;
 }
- 
+
 .hns-rule-seg--blue { background: #1a3a8f; }
 .hns-rule-seg--white { background: #ffffff; }
 .hns-rule-seg--red { background: #c8102e; }
- 
+
 /* ---------- Sliding track ---------- */
 .hns-track-outer {
   width: 100%;
@@ -1152,7 +1175,7 @@ section {
     transparent 100%
   );
 }
- 
+
 .hns-track {
   display: flex;
   width: max-content;
@@ -1160,22 +1183,22 @@ section {
   padding: 6px 13px;
   animation: hns-scroll 24s linear infinite;
 }
- 
+
 .hns-track-outer:hover .hns-track {
   animation-play-state: paused;
 }
- 
+
 @keyframes hns-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
- 
+
 /* ---------- Cards ---------- */
 .hns-card {
   position: relative;
   flex: 0 0 auto;
-  width: 260px;
-  min-height: 340px;
+  width: 280px;
+  min-height: 400px;
   background: #f3f4f8;
   border-radius: 16px;
   padding: 36px 26px 48px;
@@ -1185,11 +1208,11 @@ section {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
- 
+
 .hns-card:hover {
   transform: translateY(-6px);
 }
- 
+
 .hns-icon-box {
   width: 84px;
   height: 84px;
@@ -1201,27 +1224,57 @@ section {
   overflow: hidden;
   background: #e4e6f2;
 }
- 
+
 .hns-icon {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
- 
+
 .hns-card-title {
   color: #10173b;
   font-size: 19px;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   line-height: 1.3;
 }
- 
+
 .hns-card-text {
   color: #565c7a;
   font-size: 15px;
   line-height: 1.6;
 }
- 
+
+/* ---------- Sub-item list inside each card ---------- */
+.hns-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hns-card-list-item {
+  position: relative;
+  color: #565c7a;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 18px;
+}
+
+.hns-card-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c8102e;
+}
+
 /* Diagonal blue/red ribbon at the bottom of each card */
 .hns-card::before {
   content: "";
@@ -1233,7 +1286,7 @@ section {
   background: #1a3a8f;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
- 
+
 .hns-card::after {
   content: "";
   position: absolute;
@@ -1244,7 +1297,7 @@ section {
   background: #c8102e;
   clip-path: polygon(0 100%, 55% 0, 100% 0, 45% 100%);
 }
- 
+
 /* ---------- Footer note ---------- */
 .hns-note {
   display: flex;
@@ -1257,33 +1310,34 @@ section {
   font-size: 15px;
   opacity: 0.85;
 }
- 
+
 .hns-arrow {
   font-style: normal;
   font-weight: 700;
 }
- 
+
 .hns-arrow--left { color: #1a3a8f; }
 .hns-arrow--right { color: #c8102e; }
- 
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .hns-card {
-    width: 230px;
-    min-height: 320px;
+    width: 250px;
+    min-height: 380px;
   }
 }
- 
+
 @media (max-width: 768px) {
   .hns-section { padding: 80px 0; }
   .hns-card {
-    width: 200px;
-    min-height: 300px;
+    width: 220px;
+    min-height: 360px;
     padding: 28px 20px 40px;
   }
   .hns-icon-box { width: 68px; height: 68px; }
+  .hns-card-list-item { font-size: 13px; }
 }
- 
+
 @media (prefers-reduced-motion: reduce) {
   .hns-track {
     animation: none;
